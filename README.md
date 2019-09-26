@@ -11,11 +11,17 @@
 
 In this exercise, your task to build a workflow for making, and firing pottery, and then determining if it should be sold at a craft show.
 
-1. Define a factory function that is responsible for making a piece of pottery. The function should output an object that represents a piece of pottery. It should describe its shape, weight, and height. The function should take all three of those properties as input to generate the object.
+1. Define a factory function that is responsible for making a piece of pottery.
+    1. The function should output an object that represents a piece of pottery.
+    1. The object should describe its shape, weight, and height.
+    1. The function should take all three of those properties as input to generate the object.
+    1. The function should also add an `id` property to the object whose value is an integer, and each object should have a unique `id` value. Use a globally-scoped variable and increment it each time an object is created.
 1. Define a function that is responsible for acting as a kiln. It should take a pottery object as input and also the temperature of the kiln as input. It should add a new property of `fired` with the value of `true` to the object. It should output the pottery object.
     1. If the temperature of the kiln is above 2200 degrees then the pottery object should have a new property of `cracked` added to it, with a value of `true`.
     1. If the temperature of the kiln is below, or equal to, 2200 degrees then the pottery object should have a new property of `cracked` added to it, with a value of `false`.
-1. Define a function that is responsible for determining if a piece of pottery should be sold. Cracked pottery should not be sold, and non-cracked pottery should be sold. If the weight of the piece of pottery is over 3, then it should get a `price` property with a value of 40. If it's under 3, its price should be 20.
+1. Define a function that is responsible for determining if a piece of pottery should be sold. Cracked pottery should not be sold, and non-cracked pottery should be sold.
+    1. If the weight of the piece of pottery is over 3, then it should get a `price` property with a value of 40.
+    1. If the weight is under 3, its price should be 20.
 
 ```js
 const potteryToSell = []
@@ -46,3 +52,14 @@ You sold a {shape of pottery} for ${price}
 ```
 
 Once complete, push your branch to Github, create a pull request and merge your branch into master. Then pull down the new master to your machine.
+
+## The Hairy Potter - Part III
+
+In this exercise, you are going to use `json-server` to expose a API containing JSON representations of pottery items, and then write JavaScript to get data from the API.
+
+1. Create an `api` sub-directory in your project directory.
+1. In that directory, create a `pottery.json` file.
+1. In that file, create a `pottery` resource array and create 5 pottery JSON representations in that array. Each one should all of the properties listed in Part 1 of this exercise.
+1. Start `json-server`.
+1. Instead of building your array from the 3 functions you defined in Part 1, use `fetch` to get the data from your API.
+1. Once you have the data, use it for Part 2 of this exercise.
