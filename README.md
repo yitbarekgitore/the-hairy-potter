@@ -44,3 +44,5 @@ In this exercise, you are going to create HTML representations of the pottery yo
 ```html
 You sold a {shape of pottery} for ${price}
 ```
+
+Once complete, push your branch to Github, create a pull request and merge your branch into master. Then pull down the new master to your machine.
