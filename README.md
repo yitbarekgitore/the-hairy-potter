@@ -1,4 +1,4 @@
-# Book 2 Review
+# JavaScript Review
 
 ## Setup
 
@@ -11,7 +11,7 @@
 
 In this exercise, your task to build a workflow for making, and firing pottery, and then determining if it should be sold at a craft show.
 
-1. Define a factory function that is responsible for making a piece of pottery.
+1. Define a function that is responsible for making a piece of pottery.
     1. The function should output an object that represents a piece of pottery.
     1. The object should describe its shape, weight, and height.
     1. The function should take all three of those properties as input to generate the object.
