@@ -5,7 +5,7 @@
 1. Fork this repository into your Github account.
 1. Clone your repo to your machine.
 1. Create a branch named `make-pottery-{your initials}`.
-1. Do all of your work on this branch.
+1. Do all of your work for Part I on this branch.
 
 ## The Hairy Potter - Part I
 
